@@ -4,11 +4,13 @@ import AuctionImage2 from "../assets/auction2.jpg";
 import PlaceBid from "../assets/place-your-bid.svg";
 import TrackAuction from "../assets/track-the-auction.svg";
 import WinAuction from "../assets/win-the-deal.svg";
+import Layout from "../Layout/Layout";
 
 function Home() {
   const navigate = useNavigate();
 
   return (
+    <Layout>
     <div>
       {/* Hero Section */}
       <section className="flex flex-col-reverse items-center justify-between px-6 py-10 gap-10 md:flex-row bg-gradient-to-l from-slate-50 to-slate-200">
@@ -153,6 +155,7 @@ function Home() {
         </div>
       </section>
     </div>
+    </Layout>
   );
 }
 
